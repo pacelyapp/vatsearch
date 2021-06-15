@@ -1,0 +1,37 @@
+{
+  "name": "@pacely/vatsearch",
+  "version": "2.0.0",
+  "description": "Search for company records in all Nordic countries.",
+  "repository": "https://github.com/pacelyapp/vatsearch",
+  "license": "MIT",
+  "author": "Chris Magnussen <chris@hirvi.no>",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "siroc build && node dist/index.js",
+    "ts": "tsc --noEmit",
+    "build": "rimraf ./dist && siroc build",
+    "lint": "eslint --ext .js,.ts,.vue .",
+    "release": "yarn build && standard-version && git push --follow-tags",
+    "test": "yarn lint && jest"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.14.5",
+    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "@types/node": "^15.12.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.28.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "jest": "^27.0.4",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2",
+    "siroc": "^0.6.2",
+    "standard-version": "^9.3.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  }
+}
