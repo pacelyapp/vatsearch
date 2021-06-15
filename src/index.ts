@@ -1,6 +1,5 @@
 import * as parser from './parsers'
 import { ParserInterface } from './interfaces/parser'
-import { Company } from './interfaces/company'
 
 export default class VatSearch {
     getParser (lang: string): ParserInterface {
@@ -21,5 +20,3 @@ export default class VatSearch {
         return new map[lang]() as ParserInterface
     }
 }
-
-const parse: ParserInterface = new VatSearch().getParser('FI')

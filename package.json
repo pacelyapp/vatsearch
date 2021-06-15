@@ -7,13 +7,18 @@
   "author": "Chris Magnussen <chris@hirvi.no>",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "nodemon",
     "start": "siroc build && node dist/index.js",
     "ts": "tsc --noEmit",
-    "build": "rimraf ./dist && siroc build",
+    "clean": "rimraf ./dist",
+    "build": "yarn clean && siroc build",
     "lint": "eslint --ext .js,.ts,.vue .",
     "release": "yarn build && standard-version && git push --follow-tags",
+    "prepublish": "in-publish && yarn build || :",
     "test": "yarn lint && jest"
   },
   "dependencies": {
@@ -26,6 +31,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.28.0",
     "eslint-plugin-nuxt": "^2.0.0",
+    "in-publish": "^2.0.1",
     "jest": "^27.0.4",
     "nodemon": "^2.0.7",
     "rimraf": "^3.0.2",
