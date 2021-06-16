@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.4](https://github.com/pacelyapp/vatsearch/compare/v2.1.3...v2.1.4) (2021-06-16)
+
+
+### Bug Fixes
+
+* **parser:** 'URLSearchParams' is defined but never used ([19ad3a8](https://github.com/pacelyapp/vatsearch/commit/19ad3a8d7d40159968b7222aa682ef44b976eff4))
+* **parser:** Fixed param parser ([fcdcfe9](https://github.com/pacelyapp/vatsearch/commit/fcdcfe9a442da049964cc4fc7ab649bc50b84aec))
+
 ### [2.1.3](https://github.com/pacelyapp/vatsearch/compare/v2.1.2...v2.1.3) (2021-06-16)
 
 
