@@ -1,4 +1,3 @@
-import { URLSearchParams } from 'url'
 import { ParserInterface, ParserSettings, Company, RiskAnalyses } from '../interfaces'
 import { queryString } from '../helpers'
 
