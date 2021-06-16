@@ -1,6 +1,9 @@
 module.exports = {
-    preset: '@nuxt/test-utils',
+    collectCoverage: true,
     collectCoverageFrom: [
         'src/**'
-    ]
+    ],
+    transform: {
+        '^.+\\.(ts|tsx)$': 'ts-jest'
+    }
 }
