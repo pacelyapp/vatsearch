@@ -1,53 +1,53 @@
 {
-    "name": "@pacely/vatsearch",
-    "version": "2.0.1",
-    "description": "Search for company records in all Nordic countries.",
-    "keywords": [
-        "brreg",
-        "cvr",
-        "ytj",
-        "pacely"
-    ],
-    "repository": "https://github.com/pacelyapp/vatsearch",
-    "license": "MIT",
-    "author": "Chris Magnussen <chris@hirvi.no>",
-    "main": "dist/index.js",
-    "types": "dist/types.d.ts",
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "dev": "nodemon",
-        "start": "siroc build && node dist/index.js",
-        "clean": "rimraf ./dist",
-        "build": "yarn clean && siroc build",
-        "lint": "eslint --ext .js,.ts .",
-        "release": "yarn build && yarn test && standard-version && git push --follow-tags && yarn publish",
-        "prepublish": "in-publish && yarn build || :",
-        "test": "yarn lint && jest"
-    },
-    "dependencies": {
-        "node-fetch": "^2.6.1"
-    },
-    "devDependencies": {
-        "@babel/preset-typescript": "^7.14.5",
-        "@nuxtjs/eslint-config-typescript": "^6.0.1",
-        "@types/jest": "^26.0.23",
-        "@types/node": "^15.12.2",
-        "babel-eslint": "^10.1.0",
-        "eslint": "^7.28.0",
-        "eslint-plugin-nuxt": "^2.0.0",
-        "in-publish": "^2.0.1",
-        "jest": "^27.0.4",
-        "nodemon": "^2.0.7",
-        "rimraf": "^3.0.2",
-        "siroc": "^0.6.2",
-        "standard-version": "^9.3.0",
-        "ts-jest": "^27.0.3",
-        "ts-node": "^10.0.0",
-        "typescript": "^4.3.2"
-    },
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@pacely/vatsearch",
+  "version": "2.1.0",
+  "description": "Search for company records in all Nordic countries.",
+  "keywords": [
+    "brreg",
+    "cvr",
+    "ytj",
+    "pacely"
+  ],
+  "repository": "https://github.com/pacelyapp/vatsearch",
+  "license": "MIT",
+  "author": "Chris Magnussen <chris@hirvi.no>",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "siroc build && node dist/index.js",
+    "clean": "rimraf ./dist",
+    "build": "yarn clean && siroc build",
+    "lint": "eslint --ext .js,.ts .",
+    "release": "yarn build && yarn test && standard-version && git push --follow-tags && yarn publish",
+    "prepublish": "in-publish && yarn build || :",
+    "test": "yarn lint && jest"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.14.5",
+    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.28.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "in-publish": "^2.0.1",
+    "jest": "^27.0.4",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2",
+    "siroc": "^0.6.2",
+    "standard-version": "^9.3.0",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
