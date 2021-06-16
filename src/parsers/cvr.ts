@@ -1,6 +1,5 @@
-import { URLSearchParams } from 'url'
-import { ParserInterface, ParserSettings } from '../interfaces/parser'
-import { Company, RiskAnalyses } from '../interfaces/company'
+import { ParserInterface, ParserSettings, Company, RiskAnalyses } from '../interfaces'
+import { queryString } from '../helpers'
 
 const fetch = require('node-fetch')
 
@@ -17,7 +16,7 @@ export default class Cvr implements ParserInterface {
     }
 
     find (query: string | number, additionalParams?: Record<string, any>): Promise<Company[]> {
-        const queryParams: URLSearchParams = new URLSearchParams({
+        const queryParams = queryString({
             ...additionalParams,
             country: 'dk',
             name: query as string
@@ -34,7 +33,7 @@ export default class Cvr implements ParserInterface {
     }
 
     get (vatId: string | number): Promise<Company> {
-        const queryParams: URLSearchParams = new URLSearchParams({
+        const queryParams = queryString({
             country: 'dk',
             vat: vatId as string
         })

@@ -1,6 +1,6 @@
 import { URLSearchParams } from 'url'
-import { ParserInterface, ParserSettings } from '../interfaces/parser'
-import { Company, RiskAnalyses } from '../interfaces/company'
+import { ParserInterface, ParserSettings, Company, RiskAnalyses } from '../interfaces'
+import { queryString } from '../helpers'
 
 const fetch = require('node-fetch')
 
@@ -18,7 +18,7 @@ export default class Ytj implements ParserInterface {
     }
 
     find (query: string | number, additionalParams?: Record<string, any>): Promise<Company[]> {
-        const queryParams: URLSearchParams = new URLSearchParams({
+        const queryParams = queryString({
             ...additionalParams,
             name: query as string
         })
