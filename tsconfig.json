@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
+        "target": "es2018",
         "module": "ESNext",
         "lib": [
             "esnext",
@@ -13,9 +13,6 @@
         "moduleResolution": "node",
         "noImplicitAny": true,
         "esModuleInterop": true,
-        "typeRoots": [
-            "./src/interfaces"
-        ],
         "resolveJsonModule": true,
         "types": [
             "node",
