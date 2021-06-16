@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.2](https://github.com/pacelyapp/vatsearch/compare/v2.1.1...v2.1.2) (2021-06-16)
+
+
+### Bug Fixes
+
+* Fixed typings. Now includes interfaces ([b76a594](https://github.com/pacelyapp/vatsearch/commit/b76a594d66695fdb51f4730c9157833c08a36d4f))
+* Rollback to es2018 ([91dd6d7](https://github.com/pacelyapp/vatsearch/commit/91dd6d795b9b8332a47e1f1f78f9fb5466cbf18f))
+
 ### [2.1.1](https://github.com/pacelyapp/vatsearch/compare/v2.1.0...v2.1.1) (2021-06-16)
 
 ## [2.1.0](https://github.com/pacelyapp/vatsearch/compare/v2.0.1...v2.1.0) (2021-06-16)
