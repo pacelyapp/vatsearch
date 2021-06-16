@@ -1,6 +1,5 @@
 import * as parser from './parsers'
-import { ParserInterface } from './interfaces/parser'
-import { VatSearchOptions } from './interfaces/config'
+import { ParserInterface, VatSearchOptions } from './interfaces'
 
 export default class VatSearch {
     options: VatSearchOptions
