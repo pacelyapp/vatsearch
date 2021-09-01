@@ -27,7 +27,7 @@
     "test": "yarn lint && jest"
   },
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^3.0.0"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.14.5",
